@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto Reviva — Transformando vidas, restaurando esperanças</title>
+<meta name="description" content="Projeto Reviva: Jiu-Jitsu, formação e fé para crianças e adolescentes em Fortaleza. Uma iniciativa da Comunidade Cristã Tenda da Aliança.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projeto Reviva — Transformando vidas, restaurando esperanças">
+<meta property="og:description" content="Jiu-Jitsu, formação e fé para crianças e adolescentes em Fortaleza. Conheça o Projeto Reviva.">
+<meta property="og:image" content="img/grupo-completo-cruz.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projeto Reviva — Transformando vidas, restaurando esperanças">
+<meta name="twitter:description" content="Jiu-Jitsu, formação e fé para crianças e adolescentes em Fortaleza.">
+<meta name="twitter:image" content="img/grupo-completo-cruz.jpg">
+
+<link rel="icon" type="image/png" href="img/logo-reviva-small.png">
+<link rel="canonical" href="https://projetoreviva.vercel.app/">
+<link rel="preload" as="image" href="img/grupo-completo-cruz.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div class="belt-progress" id="beltProgress"></div>
+
+<header>
+  <div class="header-inner wrap">
+    <div class="logo">
+      <img src="img/logo-reviva-small.png" alt="Logo Projeto Reviva">
+      <span class="logo-text">Reviva</span>
+    </div>
+    <nav class="desktop-nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#dia-a-dia">Dia a dia</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="#acao-social">Ação Social</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="header-cta desktop-only" href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener">Vem falar com a gente</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#15160F" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#15160F" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#sobre" class="mm-link">Sobre</a>
+    <a href="#dia-a-dia" class="mm-link">Dia a dia</a>
+    <a href="equipe.html" class="mm-link">Equipe</a>
+    <a href="#acao-social" class="mm-link">Ação Social</a>
+    <a href="#local" class="mm-link">Onde estamos</a>
+  </nav>
+  <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem falar com a gente</a>
+  <p class="mobile-menu-footer mt-32">Comunidade Cristã Tenda da Aliança<br>Fortaleza · CE</p>
+</div>
+
+<a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="floating-cta" id="floatingCta">
+  Fala com a gente →
+</a>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-kicker">
+          <img src="img/logo-reviva-small.png" alt="">
+          <span>Projeto Reviva</span>
+        </div>
+        <h1 class="hero-title">
+          Transformando <span class="hi">vidas</span>,<br>
+          restaurando esperanças
+        </h1>
+        <p class="hero-location">Prefeito José Walter · Fortaleza</p>
+        <p class="hero-sub">
+          O Projeto Reviva usa o Jiu-Jitsu como ponte para formar caráter, disciplina e propósito em crianças e adolescentes — dentro da Comunidade Cristã Tenda da Aliança.
+        </p>
+        <div class="hero-actions">
+          <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem conversar com a gente</a>
+          <a href="#sobre" class="btn btn-outline-light">Conheça o projeto</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">15</div><div class="stat-label">Crianças &amp; adolescentes</div></div>
+          <div><div class="stat-num">5–15</div><div class="stat-label">Anos de idade</div></div>
+          <div><div class="stat-num">Jul/26</div><div class="stat-label">Início do projeto</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-photo">
+          <picture>
+            <source srcset="img/grupo-completo-cruz.webp" type="image/webp">
+            <img src="img/grupo-completo-cruz.jpg" alt="Grupo de crianças, adolescentes e instrutores do Projeto Reviva reunidos na Comunidade Cristã Tenda da Aliança" loading="eager">
+          </picture>
+          <div class="hero-photo-badge">Comunidade Tenda da Aliança</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa-texto">
+    <p>Jiu-Jitsu · Formação · Fé · Comunidade</p>
+  </div>
+
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Sobre o projeto</span>
+        <h2 class="section-title">O que é o<br>Projeto Reviva</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <p>O <strong>Projeto Reviva</strong> nasceu em julho de 2026 dentro da Comunidade Cristã Tenda da Aliança, na Rua Vinte Seis, no bairro Prefeito José Walter, em Fortaleza. A ideia é simples: dar às crianças e adolescentes da região um lugar seguro para treinar, aprender e crescer.</p>
+          <p>No tatame, o Jiu-Jitsu ensina respeito, autocontrole e superação. Fora dele, a formação cristã dá sentido a essas lições, dentro da rotina da própria comunidade.</p>
+          <p>O projeto é liderado por <strong class="o">Josué Silva, Rebecca Sabino e Bruno Oliveira</strong>, e mantido pela comunidade.</p>
+          <div class="stat-strip">
+            <div class="stat-strip-item"><div class="n">Seg · 19h</div><div class="l">Treino da semana</div></div>
+            <div class="stat-strip-item"><div class="n">Sáb · 15h</div><div class="l">Fim de semana</div></div>
+            <div class="stat-strip-item"><div class="n">Gratuito</div><div class="l">Para a comunidade</div></div>
+          </div>
+        </div>
+        <div class="pilar-stack">
+          <div class="pilar"><div class="num">01</div><h4>Jiu-Jitsu</h4><p>Aulas às segundas (19h) e sábados (15h), com graduação por faixas, técnica e respeito ao próximo.</p></div>
+          <div class="pilar"><div class="num">02</div><h4>Formação</h4><p>Acompanhamento de valores, disciplina e propósito de vida para cada criança.</p></div>
+          <div class="pilar"><div class="num">03</div><h4>Fé &amp; Comunidade</h4><p>Acolhimento dentro da Comunidade Cristã Tenda da Aliança, onde cada criança é cuidada.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="dia-a-dia">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow on-dark">O dia a dia no tatame</span>
+        <h2 class="section-title text-paper">A rotina que forma<br>caráter</h2>
+        <p class="galeria-sub">Cada treino é também uma aula de vida — pontualidade, respeito ao colega, humildade na derrota e alegria na conquista.</p>
+      </div>
+
+      <div class="carousel reveal">
+        <div class="carousel-track" id="carouselTrack" role="region" aria-label="Galeria de fotos do dia a dia" aria-live="polite">
+          <div class="carousel-slide">
+            <picture><source srcset="img/roda-maos-dadas.webp" type="image/webp"><img src="img/roda-maos-dadas.jpg" alt="Alunos e instrutores de mãos dadas em roda de oração no Projeto Reviva" loading="lazy"></picture>
+            <div class="carousel-caption">União &amp; oração</div>
+          </div>
+          <div class="carousel-slide">
+            <picture><source srcset="img/aula-tatame-cheio.webp" type="image/webp"><img src="img/aula-tatame-cheio.jpg" alt="Aula de Jiu-Jitsu em andamento com o tatame cheio de alunos" loading="lazy"></picture>
+            <div class="carousel-caption">Aula em andamento</div>
+          </div>
+          <div class="carousel-slide">
+            <picture><source srcset="img/foto-tecnica.webp" type="image/webp"><img src="img/foto-tecnica.jpg" alt="Instrutor ensinando técnica de Jiu-Jitsu a uma aluna" loading="lazy"></picture>
+            <div class="carousel-caption">Disciplina no tatame</div>
+          </div>
+          <div class="carousel-slide">
+            <picture><source srcset="img/grupo-tatame-fila.webp" type="image/webp"><img src="img/grupo-tatame-fila.jpg" alt="Alunos e instrutores perfilados no tatame do Projeto Reviva" loading="lazy"></picture>
+            <div class="carousel-caption">Respeito &amp; disciplina</div>
+          </div>
+          <div class="carousel-slide">
+            <picture><source srcset="img/lideres-conversando.webp" type="image/webp"><img src="img/lideres-conversando.jpg" alt="Instrutores e líderes do Projeto Reviva conversando com o grupo" loading="lazy"></picture>
+            <div class="carousel-caption">Nossa equipe</div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <span class="carousel-hint">Arraste para o lado →</span>
+          <div class="carousel-btns">
+            <button class="carousel-btn" id="prevBtn" aria-label="Slide anterior"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="carousel-btn" id="nextBtn" aria-label="Próximo slide"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipe" id="equipe">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Quem forma o Reviva</span>
+        <h2 class="section-title">Nossa equipe</h2>
+      </div>
+      <div class="equipe-grid reveal">
+        <div class="membro-card">
+          <div class="membro-photo">
+            <picture><source srcset="img/foto-tecnica.webp" type="image/webp"><img src="img/foto-tecnica.jpg" alt="Josué Silva, instrutor do Projeto Reviva"></picture>
+          </div>
+          <div class="membro-body">
+            <div class="membro-role">Instrutor de Jiu-Jitsu</div>
+            <div class="membro-name">Josué Silva</div>
+            <span class="membro-belt">Faixa Azul</span>
+            <p class="bio">Educador físico há 3 anos, com 6 anos de Jiu-Jitsu e 10 de Muay Thai.</p>
+          </div>
+        </div>
+        <div class="membro-card">
+          <div class="membro-photo">
+            <picture><source srcset="img/rebecca-sabino.webp" type="image/webp"><img src="img/rebecca-sabino.jpg" alt="Rebecca Sabino, coordenação e liderança do Projeto Reviva"></picture>
+          </div>
+          <div class="membro-body">
+            <div class="membro-role">Coordenação &amp; Liderança</div>
+            <div class="membro-name">Rebecca Sabino</div>
+            <p class="bio">Cuida da formação e do acolhimento das crianças e famílias do Reviva.</p>
+          </div>
+        </div>
+        <div class="membro-card">
+          <div class="membro-photo">
+            <picture><source srcset="img/bruno-oliveira.webp" type="image/webp"><img src="img/bruno-oliveira.jpg" alt="Bruno Oliveira, coordenação e liderança do Projeto Reviva"></picture>
+          </div>
+          <div class="membro-body">
+            <div class="membro-role">Coordenação &amp; Liderança</div>
+            <div class="membro-name">Bruno Oliveira</div>
+            <p class="bio">Atua junto à Comunidade Tenda da Aliança na estrutura do projeto.</p>
+          </div>
+        </div>
+      </div>
+      <a class="equipe-link" href="equipe.html">Conheça a equipe completa →</a>
+    </div>
+  </section>
+
+  <section class="acao-social" id="acao-social">
+    <div class="wrap">
+      <div class="acao-intro reveal">
+        <div>
+          <span class="eyebrow">Além do tatame</span>
+          <h2 class="section-title">Cuidando também<br>de quem vem junto</h2>
+        </div>
+        <div>
+          <span class="acao-label">Uma vez por mês</span>
+          <p>Uma vez por mês, o Reviva abre as portas para toda a comunidade com <strong>dias de ação social</strong>: atendimento médico, aferição de pressão, teste de glicemia e cuidado a quem precisa — pais, avós e vizinhos das crianças que treinam com a gente.</p>
+        </div>
+      </div>
+
+      <div class="acao-grid reveal">
+        <div class="acao-card"><picture><source srcset="img/acao-social-atendimento.webp" type="image/webp"><img src="img/acao-social-atendimento.jpg" alt="Médica voluntária atendendo um senhor da comunidade em dia de ação social do Projeto Reviva" loading="lazy"></picture><div class="acao-caption">Atendimento à comunidade</div></div>
+        <div class="acao-card"><picture><source srcset="img/acao-social-glicemia.webp" type="image/webp"><img src="img/acao-social-glicemia.jpg" alt="Teste de glicemia realizado durante ação social do Projeto Reviva" loading="lazy"></picture><div class="acao-caption">Teste de glicemia</div></div>
+        <div class="acao-card"><picture><source srcset="img/acao-social-teste.webp" type="image/webp"><img src="img/acao-social-teste.jpg" alt="Voluntária da saúde realizando exame em morador da comunidade" loading="lazy"></picture><div class="acao-caption">Cuidado voluntário</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="colaboradores">
+    <div class="wrap">
+      <div class="section-head reveal mb-36">
+        <span class="eyebrow">Gratidão</span>
+        <h2 class="section-title">Quem já<br>colaborou com a gente</h2>
+      </div>
+      <p class="colab-sub reveal">Profissionais e negócios que já estiveram com o Reviva em dias de ação ou em aulas no tatame.</p>
+      <div class="colab-grid reveal">
+        <div class="colab-item">
+          <picture><source srcset="img/colab-nutrifit.webp" type="image/webp"><img src="img/colab-nutrifit.jpg" alt="NutriFit"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-reviva-spa.webp" type="image/webp"><img src="img/colab-reviva-spa.jpg" alt="Reviva Spa"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-priscila-viana.webp" type="image/webp"><img src="img/colab-priscila-viana.jpg" alt="Priscila Viana Nutricionista Clínica e Esportiva"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-hope-jiujitsu.webp" type="image/webp"><img src="img/colab-hope-jiujitsu.jpg" alt="Hope Jiu Jitsu"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-italo-caveirao.webp" type="image/webp"><img src="img/colab-italo-caveirao.jpg" alt="Ítalo Caveirão Brazilian Jiu-Jitsu"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-tc-brothers.webp" type="image/webp"><img src="img/colab-tc-brothers.jpg" alt="TC Brothers Brazilian Jiu Jitsu"></picture>
+        </div>
+        <div class="colab-item">
+          <picture><source srcset="img/colab-rayssa-vitoria.webp" type="image/webp"><img src="img/colab-rayssa-vitoria.jpg" alt="Rayssa Vitória Jiu-Jitsu"></picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apadrinhar">
+    <div class="wrap">
+      <div class="apadrinhar-box reveal">
+        <div>
+          <h3>Apadrinhe uma criança e ajude a garantir sua vaga no tatame</h3>
+          <p>O projeto é gratuito, sustentado apenas por uma taxa simbólica para o tatame. Apadrinhando, você garante que nenhuma criança fique de fora.</p>
+        </div>
+        <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-solid-dark">Quero apadrinhar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 class="section-title">Tirando<br>as dúvidas</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="true"><span>O Projeto Reviva é realmente gratuito?</span><span class="plus">+</span></div>
+          <div class="faq-answer"><p>Sim. Cobramos apenas uma taxa simbólica para custear o tatame. Para famílias sem condições, existe um programa de apadrinhamento para que nenhuma criança fique de fora.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false"><span>Meu filho precisa já saber Jiu-Jitsu?</span><span class="plus">+</span></div>
+          <div class="faq-answer"><p>Não, pelo contrário — a maioria começa do zero. As aulas são pensadas para iniciantes, com graduação por faixas conforme a evolução de cada criança.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false"><span>Precisa de kimono ou equipamento próprio?</span><span class="plus">+</span></div>
+          <div class="faq-answer"><p>Para começar, não. Converse com a gente pelo Instagram que explicamos certinho o que é necessário para as primeiras aulas.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false"><span>Qual a idade mínima e máxima para participar?</span><span class="plus">+</span></div>
+          <div class="faq-answer"><p>Atendemos crianças e adolescentes de 5 a 15 anos, com turmas e treinos adaptados para cada faixa etária.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false"><span>Como funciona a parte de fé dentro do projeto?</span><span class="plus">+</span></div>
+          <div class="faq-answer"><p>O Reviva acontece dentro da Comunidade Cristã Tenda da Aliança, e a formação cristã caminha junto com o esporte — sem excluir ninguém que queira participar do Jiu-Jitsu.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimento">
+    <div class="wrap">
+      <div class="depoimento-box reveal">
+        <p class="quote">Transformando vidas, restaurando esperanças. É por isso que o Reviva existe — um treino de cada vez, uma criança de cada vez.</p>
+        <p class="author">— Projeto Reviva</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="local" id="local">
+    <div class="wrap local-grid">
+      <div class="reveal">
+        <span class="eyebrow">Onde estamos</span>
+        <h2 class="section-title mb-30">Venha nos<br>conhecer</h2>
+        <div class="info-card">
+          <div class="info-row"><h5>Endereço</h5><p>R. Vinte Seis — Prefeito José Walter, Fortaleza/CE, 60810-670</p></div>
+          <div class="info-row"><h5>Horários</h5><p>Segunda-feira às 19h · Sábado às 15h</p></div>
+          <div class="info-row"><h5>Como se inscrever</h5><p>Manda um "oi" pra gente no Instagram @projetorevivaoficial</p></div>
+        </div>
+      </div>
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Vinte+Seis,+Prefeito+Jos%C3%A9+Walter,+Fortaleza+-+CE,+60810-670&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa interativo — Localização do Projeto Reviva na Rua Vinte Seis, Prefeito José Walter, Fortaleza - CE, 60810-670. Arraste para navegar ou clique para abrir no Google Maps.">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="wrap">
+      <span class="eyebrow on-dark">Faça parte dessa história</span>
+      <h2>Sua visita ou seu apoio pode mudar a vida de uma criança</h2>
+      <p class="sub">Conheça de perto o trabalho do Projeto Reviva. É só mandar uma mensagem que a gente te recebe de braços abertos.</p>
+      <div class="cta-final-actions">
+        <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem falar com a gente</a>
+        <a href="#local" class="btn btn-outline-light">Ver endereço</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="img/logo-reviva-small.png" alt="Logo Projeto Reviva">
+          <span>Reviva</span>
+        </div>
+        <p class="desc">Um projeto social da Comunidade Cristã Tenda da Aliança que usa o Jiu-Jitsu como ferramenta de transformação para crianças e adolescentes de Fortaleza.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <a href="#sobre">Sobre o projeto</a>
+        <a href="#dia-a-dia">O dia a dia</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="#acao-social">Ação social</a>
+        <a href="#local">Onde estamos</a>
+      </div>
+      <div class="footer-col">
+        <h5>Conecte-se</h5>
+        <p>R. Vinte Seis, Prefeito José Walter — Fortaleza/CE, 60810-670</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" aria-label="Instagram do Projeto Reviva">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#FDFDF9" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="#FDFDF9" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FDFDF9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Projeto Reviva — Comunidade Cristã Tenda da Aliança</span>
+      <span>Transformando vidas, restaurando esperanças</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
