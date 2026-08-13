@@ -59,8 +59,8 @@ Extraída diretamente do logo oficial do projeto:
 1. Hero — chamada principal + CTA + estatísticas rápidas
 2. Faixa de texto — pilares em destaque (Jiu-Jitsu, Formação, Fé, Comunidade)
 3. Sobre o projeto — texto institucional + 3 pilares
-4. Carrossel "Dia a dia" — fotos reais do tatame
-5. Equipe (resumo) — cards de Josué, Rebecca e Bruno, com link para `equipe.html`
+4. Carrossel "Dia a dia" — fotos reais no tatame
+5. Equipe (resumo) — cards do Josué, Rebecca e Bruno, com link para `equipe.html`
 6. Ação Social — fotos e explicação dos eventos de atendimento à comunidade (mensal)
 7. Colaboradores — logos de quem já participou de ações ou aulas do Reviva
 8. Apadrinhamento — CTA de apadrinhar uma criança
@@ -81,16 +81,13 @@ Extraída diretamente do logo oficial do projeto:
 
 ## Próximos passos (planejados, não implementados)
 
-- [ ] Foto individual do Josué Silva (sem outra pessoa no quadro) — trocar no card da equipe assim que enviada
 - [ ] Formulário de inscrição inline (grava em banco de dados)
 - [ ] Banco de dados via Supabase (schema + Row Level Security)
-- [ ] Deploy via GitHub → Vercel
 - [ ] Painel/login simples para a equipe visualizar inscrições recebidas
 
 ## Deploy
 
-Site estático — pode ser hospedado gratuitamente em Vercel, Netlify ou GitHub Pages sem nenhuma configuração especial. Basta publicar a pasta contendo `index.html`, `equipe.html`, `style.css`, `app.js` e `img/`.
-
+Site estático — está sendo hospedado gratuitamente no Vercel sem nenhuma configuração especial. 
 ---
 
-*Projeto social sem fins lucrativos. Este repositório contém apenas o código da landing page — não armazena dados pessoais de alunos ou responsáveis (até a implementação do formulário/Supabase, listada em "Próximos passos").*
+*Projeto social sem fins lucrativos. Este repositório contém apenas o código da landing page — não armazena dados pessoais de alunos ou responsáveis.*
