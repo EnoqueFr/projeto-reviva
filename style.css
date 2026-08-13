@@ -156,7 +156,10 @@ footer .desc { font-size: 13.5px; color: #8C8C82; max-width: 280px; line-height:
 
 /* ================= FLOATING MOBILE CTA (item 12) ================= */
 .floating-cta {
-  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 80;
+  position: fixed; left: 16px; right: 16px;
+  bottom: 16px;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 80;
   display: none; align-items: center; justify-content: center; gap: 8px;
   background: var(--orange); color: var(--ink); padding: 15px 20px; border-radius: 100px;
   font-family: var(--mono); font-size: 13.5px; font-weight: 700; letter-spacing: 0.02em;
