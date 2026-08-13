@@ -81,7 +81,6 @@ Extraída diretamente do logo oficial do projeto:
 
 ## Próximos passos (planejados, não implementados)
 
-- [ ] Atualizar `<link rel="canonical">` em ambas as páginas para a URL real após o deploy (hoje aponta para um placeholder `projetoreviva.vercel.app`)
 - [ ] Foto individual do Josué Silva (sem outra pessoa no quadro) — trocar no card da equipe assim que enviada
 - [ ] Formulário de inscrição inline (grava em banco de dados)
 - [ ] Banco de dados via Supabase (schema + Row Level Security)
