@@ -48,6 +48,8 @@ body.menu-open { overflow: hidden; }
 .eyebrow.on-dark { color: var(--gold); }
 .eyebrow.on-dark::before { background: var(--gold); }
 
+.link-inline { color: var(--orange-deep); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
 h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.05; }
 
 /* ================= FAIXA PROGRESS BAR (signature) ================= */
@@ -122,6 +124,7 @@ body.menu-open .mobile-menu { transform: translateY(0); }
 }
 .btn-primary { background: var(--orange); color: var(--ink); }
 .btn-primary:hover { opacity: 0.88; }
+.btn-primary, .btn-solid-dark { text-transform: uppercase; letter-spacing: 0.04em; }
 .btn-outline-light { background: transparent; color: var(--paper); border: 1.5px solid rgba(253,253,249,0.35); }
 .btn-outline-light:hover { background: rgba(253,253,249,0.08); border-color: rgba(253,253,249,0.55); }
 .btn-outline-dark { background: transparent; color: var(--ink); border: 1.5px solid rgba(21,22,15,0.3); }
@@ -134,7 +137,7 @@ section { padding: 88px 0; position: relative; }
 @media (max-width: 640px) { section { padding: 64px 0; } }
 .section-head { max-width: 620px; margin-bottom: 50px; }
 @media (max-width: 640px) { .section-head { margin-bottom: 36px; } }
-.section-title { font-size: clamp(28px, 3.8vw, 46px); margin-top: 16px; color: var(--ink); }
+.section-title { font-size: clamp(28px, 3.8vw, 46px); margin-top: 16px; color: var(--ink); text-transform: uppercase; letter-spacing: 0.01em; }
 
 /* ================= FOOTER ================= */
 footer { background: #0E0F0A; color: var(--paper); padding: 54px 0 26px; }

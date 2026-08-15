@@ -1,0 +1,48 @@
+.painel-body { background: var(--paper-warm); min-height: 100vh; }
+
+.painel-header {
+  background: var(--paper); border-bottom: 1px solid var(--line);
+}
+.painel-header-inner { padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
+@media (max-width: 640px) { .painel-header-inner { padding: 14px 20px; } }
+
+.painel-user-info { display: flex; align-items: center; gap: 14px; font-family: var(--mono); font-size: 13px; }
+.painel-user-info.hidden { display: none; }
+
+.painel-main { padding: 56px 32px; max-width: 960px; }
+@media (max-width: 640px) { .painel-main { padding: 40px 20px; } }
+
+.painel-login { max-width: 380px; margin: 40px auto; }
+.painel-sub { color: #565750; font-size: 15px; margin-top: 8px; margin-bottom: 8px; }
+
+.painel-form { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+.painel-form .btn { align-self: stretch; justify-content: center; }
+
+.painel-dashboard.hidden, .painel-login.hidden { display: none; }
+
+.painel-dashboard-head {
+  display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+  margin-bottom: 24px;
+}
+.painel-filtro { display: flex; flex-direction: column; gap: 6px; }
+.painel-filtro label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.03em; text-transform: uppercase; color: #565750; }
+.painel-filtro select {
+  font-family: var(--body); font-size: 14px; padding: 9px 12px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+}
+
+.painel-table-wrap { overflow-x: auto; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
+.painel-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+.painel-table th, .painel-table td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.painel-table th { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; text-transform: uppercase; color: #7a7b70; }
+.painel-table tbody tr:last-child td { border-bottom: none; }
+.painel-table tbody tr:hover { background: var(--paper-warm); }
+
+.painel-status-select {
+  font-family: var(--mono); font-size: 11.5px; padding: 6px 10px; border-radius: 100px;
+  border: 1px solid var(--line); background: var(--paper-warm); color: var(--ink); cursor: pointer;
+}
+.painel-status-select[data-status="pendente"] { background: #FCEFD9; border-color: #E8B84B; }
+.painel-status-select[data-status="contatado"] { background: #E8F1FF; border-color: #2D5DA8; }
+.painel-status-select[data-status="matriculado"] { background: #EAF6D9; border-color: var(--green-deep); }
+.painel-status-select[data-status="descartado"] { background: #F3E3E0; border-color: #C43A0A; }

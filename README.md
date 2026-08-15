@@ -10,14 +10,27 @@ Landing page institucional do **Projeto Reviva**, iniciativa social da Comunidad
 
 ```
 reviva-site/
-├── index.html      → Página principal (hero, sobre, ação social, carrossel, equipe, apadrinhamento, FAQ, localização)
+├── index.html      → Página principal (hero, sobre, ação social, carrossel, equipe, inscrição, apadrinhamento, FAQ, localização)
 ├── equipe.html      → Página dedicada à equipe/liderança do projeto
+├── painel.html      → Painel restrito aos colaboradores (login + lista de inscrições recebidas)
 ├── style.css        → Estilos compartilhados entre as páginas (variáveis, header, botões, menu mobile, footer)
 ├── home.css         → Estilos específicos de index.html
 ├── equipe.css       → Estilos específicos de equipe.html
-├── app.js           → Scripts compartilhados (menu mobile com focus trap, carrossel, FAQ, scroll reveal, botão flutuante)
+├── painel.css       → Estilos específicos de painel.html
+├── app.js           → Scripts compartilhados (menu mobile com focus trap, carrossel, FAQ, scroll reveal, botão flutuante, envio do formulário de inscrição)
+├── painel.js        → Script do painel de colaboradores (login, listagem e atualização de status das inscrições)
 └── img/             → Imagens do projeto (fotos reais + logo + logos de colaboradores), em WebP com fallback JPEG
 ```
+
+## Backend
+
+O formulário de inscrição e o painel de colaboradores conversam com uma **API própria em Node.js/Express**, num repositório separado (`reviva-backend`) — veja o README dele para detalhes de setup, endpoints e deploy. Resumo:
+
+- `POST /api/inscricoes` — recebe as inscrições do formulário (público)
+- `GET /api/inscricoes` / `PATCH /api/inscricoes/:id` — usado pelo painel (exige login)
+- `POST /api/auth/login` — login dos colaboradores (JWT)
+
+Em `app.js` e `painel.js`, a constante `API_BASE_URL` precisa apontar pra URL da API depois do deploy dela.
 
 ## Stack
 
@@ -81,9 +94,9 @@ Extraída diretamente do logo oficial do projeto:
 
 ## Próximos passos (planejados, não implementados)
 
-- [ ] Formulário de inscrição inline (grava em banco de dados)
-- [ ] Banco de dados via Supabase (schema + Row Level Security)
-- [ ] Painel/login simples para a equipe visualizar inscrições recebidas
+- [ ] Deploy da API (`reviva-backend`) em produção — código pronto, falta hospedar (ex: Render) e configurar as variáveis de ambiente
+- [ ] Trocar `API_BASE_URL` (placeholder) em `app.js` e `painel.js` pela URL real da API depois do deploy
+- [ ] Criar o primeiro login de colaborador em produção (`npm run seed:colaborador` no backend)
 
 ## Deploy
 

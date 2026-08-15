@@ -40,9 +40,10 @@
       <a href="#dia-a-dia">Dia a dia</a>
       <a href="equipe.html">Equipe</a>
       <a href="#acao-social">Ação Social</a>
+      <a href="#inscricao">Inscreva-se</a>
       <a href="#local">Onde estamos</a>
     </nav>
-    <a class="header-cta desktop-only" href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener">Vem falar com a gente</a>
+    <a class="header-cta desktop-only" href="#inscricao">Quero inscrever meu filho</a>
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
       <svg class="icon-open" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#15160F" stroke-width="2" stroke-linecap="round"/></svg>
       <svg class="icon-close" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#15160F" stroke-width="2" stroke-linecap="round"/></svg>
@@ -56,14 +57,15 @@
     <a href="#dia-a-dia" class="mm-link">Dia a dia</a>
     <a href="equipe.html" class="mm-link">Equipe</a>
     <a href="#acao-social" class="mm-link">Ação Social</a>
+    <a href="#inscricao" class="mm-link">Inscreva-se</a>
     <a href="#local" class="mm-link">Onde estamos</a>
   </nav>
-  <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem falar com a gente</a>
+  <a href="#inscricao" class="btn btn-primary">Quero inscrever meu filho</a>
   <p class="mobile-menu-footer mt-32">Comunidade Cristã Tenda da Aliança<br>Fortaleza · CE</p>
 </div>
 
-<a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="floating-cta" id="floatingCta">
-  Fala com a gente →
+<a href="#inscricao" class="floating-cta" id="floatingCta">
+  Inscrever meu filho →
 </a>
 
 <main>
@@ -84,7 +86,7 @@
           O Projeto Reviva usa o Jiu-Jitsu como ponte para formar caráter, disciplina e propósito em crianças e adolescentes — dentro da Comunidade Cristã Tenda da Aliança.
         </p>
         <div class="hero-actions">
-          <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem conversar com a gente</a>
+          <a href="#inscricao" class="btn btn-primary">Quero inscrever meu filho</a>
           <a href="#sobre" class="btn btn-outline-light">Conheça o projeto</a>
         </div>
         <div class="hero-stats">
@@ -336,7 +338,7 @@
         <div class="info-card">
           <div class="info-row"><h5>Endereço</h5><p>R. Vinte Seis — Prefeito José Walter, Fortaleza/CE, 60810-670</p></div>
           <div class="info-row"><h5>Horários</h5><p>Segunda-feira às 19h · Sábado às 15h</p></div>
-          <div class="info-row"><h5>Como se inscrever</h5><p>Manda um "oi" pra gente no Instagram @projetorevivaoficial</p></div>
+          <div class="info-row"><h5>Como se inscrever</h5><p>Pelo Instagram @projetorevivaoficial ou pelo <a href="#inscricao" class="link-inline">formulário aqui embaixo</a></p></div>
         </div>
       </div>
       <div class="map-embed reveal">
@@ -350,14 +352,44 @@
     </div>
   </section>
 
+  <section class="inscricao" id="inscricao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inscrição</span>
+        <h2 class="section-title">Quer matricular seu filho<br>ou filha?</h2>
+        <p class="inscricao-sub">Prefere falar direto? Manda um "oi" pra gente no <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="link-inline">Instagram</a>. Se preferir, é só preencher o formulário abaixo — a gente entra em contato pelo WhatsApp.</p>
+      </div>
+      <form id="inscricaoForm" class="inscricao-form reveal" novalidate>
+        <div class="form-row">
+          <label for="nomeCrianca">Nome da criança ou adolescente</label>
+          <input type="text" id="nomeCrianca" name="nome_crianca" required maxlength="100" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="idade">Idade</label>
+          <input type="number" id="idade" name="idade" min="5" max="17" required>
+        </div>
+        <div class="form-row">
+          <label for="nomeResponsavel">Nome do responsável</label>
+          <input type="text" id="nomeResponsavel" name="nome_responsavel" required maxlength="100" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="telefone">WhatsApp do responsável</label>
+          <input type="tel" id="telefone" name="telefone_whatsapp" required placeholder="(85) 9xxxx-xxxx" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary" id="inscricaoSubmit">Quero inscrever</button>
+        <p id="inscricaoMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
   <section class="cta-final">
     <div class="wrap">
       <span class="eyebrow on-dark">Faça parte dessa história</span>
       <h2>Sua visita ou seu apoio pode mudar a vida de uma criança</h2>
       <p class="sub">Conheça de perto o trabalho do Projeto Reviva. É só mandar uma mensagem que a gente te recebe de braços abertos.</p>
       <div class="cta-final-actions">
-        <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-primary">Vem falar com a gente</a>
-        <a href="#local" class="btn btn-outline-light">Ver endereço</a>
+        <a href="#inscricao" class="btn btn-primary">Quero inscrever meu filho</a>
+        <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="btn btn-outline-light">Falar no Instagram</a>
       </div>
     </div>
   </section>

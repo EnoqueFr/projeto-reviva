@@ -4,6 +4,24 @@ Histórico de versões da landing page. Formato livre, em português, pensado pa
 
 ---
 
+## [v7] — em andamento
+
+### Adicionado
+- **Backend Node.js/Express dedicado** (repositório separado `reviva-backend`), com PostgreSQL, autenticação JWT e hash de senha (bcrypt). Endpoints: `POST /api/inscricoes` (público), `GET`/`PATCH /api/inscricoes` (colaborador), `POST /api/auth/login`.
+- **Formulário de inscrição** (seção `#inscricao` em `index.html`) — nome da criança, idade, nome do responsável e WhatsApp. Envia pra API própria em vez de ir direto pro banco.
+- **Painel de colaboradores** (`painel.html` + `painel.css` + `painel.js`) — login por e-mail/senha, lista as inscrições recebidas com link direto pro WhatsApp do responsável, e permite mudar o status de cada uma (pendente/contatado/matriculado/descartado). Página sem link na navegação pública (`noindex`), acesso só por URL direta.
+- Rate limiting no backend: 5 envios de formulário/hora por IP, 10 tentativas de login/15min — proteção básica contra spam e força bruta.
+
+### Alterado
+- **CTAs do site trocados de "Vem falar com a gente" para "Quero inscrever meu filho"**, agora apontando pro formulário (`#inscricao`) em vez do Instagram — no hero, header, menu mobile, botão flutuante e CTA final de `index.html` e `equipe.html`. O Instagram continua disponível como opção secundária (CTA final e seção de inscrição).
+- Linha "Como se inscrever" da seção Local passou a citar as duas opções (Instagram e formulário).
+
+### Pendente
+- Deploy da API em produção (código pronto, falta hospedar — ver README do `reviva-backend`) e configurar `API_BASE_URL` em `app.js`/`painel.js`.
+- Criar o primeiro login de colaborador em produção.
+
+---
+
 ## [v6] — em andamento
 
 ### Corrigido

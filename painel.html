@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Painel de Colaboradores — Projeto Reviva</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" type="image/png" href="img/logo-reviva-small.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="painel.css">
+</head>
+<body class="painel-body">
+
+<header class="painel-header">
+  <div class="wrap painel-header-inner">
+    <a href="index.html" class="logo">
+      <img src="img/logo-reviva-small.png" alt="Logo Projeto Reviva">
+      <span class="logo-text">Reviva</span>
+    </a>
+    <div id="painelUserInfo" class="painel-user-info hidden">
+      <span id="painelUserNome"></span>
+      <button id="painelLogoutBtn" class="btn btn-outline-dark">Sair</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap painel-main">
+
+  <section id="loginSection" class="painel-login">
+    <h1 class="section-title">Painel de colaboradores</h1>
+    <p class="painel-sub">Acesso restrito à equipe do Projeto Reviva.</p>
+    <form id="loginForm" class="painel-form" novalidate>
+      <div class="form-row">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" name="email" required autocomplete="username">
+      </div>
+      <div class="form-row">
+        <label for="loginSenha">Senha</label>
+        <input type="password" id="loginSenha" name="senha" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary" id="loginSubmit">Entrar</button>
+      <p id="loginMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section id="dashboardSection" class="painel-dashboard hidden">
+    <div class="painel-dashboard-head">
+      <h1 class="section-title">Inscrições recebidas</h1>
+      <div class="painel-filtro">
+        <label for="filtroStatus">Filtrar por status</label>
+        <select id="filtroStatus">
+          <option value="">Todas</option>
+          <option value="pendente">Pendente</option>
+          <option value="contatado">Contatado</option>
+          <option value="matriculado">Matriculado</option>
+          <option value="descartado">Descartado</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="dashboardMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
+
+    <div class="painel-table-wrap">
+      <table class="painel-table" id="inscricoesTable">
+        <thead>
+          <tr>
+            <th>Criança</th>
+            <th>Idade</th>
+            <th>Responsável</th>
+            <th>WhatsApp</th>
+            <th>Recebida em</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="inscricoesTbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<script src="painel.js"></script>
+</body>
+</html>

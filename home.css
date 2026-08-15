@@ -138,6 +138,23 @@
   .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
   @media (max-width: 860px) { .local-grid { grid-template-columns: 1fr; gap: 28px; } .map-embed { order: -1; } }
 
+  .inscricao { background: var(--paper); }
+  .inscricao-sub { font-size: 15.5px; color: #45463C; margin-top: 14px; max-width: 560px; }
+  .inscricao-form { max-width: 460px; display: flex; flex-direction: column; gap: 18px; margin-top: 40px; }
+  .form-row { display: flex; flex-direction: column; gap: 6px; }
+  .form-row label { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.03em; text-transform: uppercase; color: #565750; font-weight: 600; }
+  .form-row input {
+    font-family: var(--body); font-size: 15px; color: var(--ink);
+    background: var(--paper-warm); border: 1px solid var(--line); border-radius: 8px;
+    padding: 13px 14px; min-height: 46px; transition: border-color 0.15s ease;
+  }
+  .form-row input:focus-visible { outline: none; border-color: var(--orange); }
+  .inscricao-form .btn { align-self: flex-start; }
+  @media (max-width: 480px) { .inscricao-form .btn { align-self: stretch; justify-content: center; } }
+  .inscricao-msg { font-family: var(--mono); font-size: 13px; min-height: 18px; }
+  .inscricao-msg.success { color: var(--green-deep); }
+  .inscricao-msg.error { color: #C43A0A; }
+
   .cta-final { background: var(--ink); color: var(--paper); text-align: center; padding: 96px 0; }
   @media (max-width: 640px) { .cta-final { padding: 64px 0; } }
   .cta-final h2 { font-size: clamp(32px, 5vw, 54px); margin: 16px auto 18px; max-width: 720px; color: var(--paper); }

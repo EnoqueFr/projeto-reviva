@@ -8,7 +8,7 @@
   .hero-title .accent { color: var(--orange); }
   .hero-sub { font-size: 17px; max-width: 560px; color: #45463C; }
 
-  .lider { display: grid; grid-template-columns: 300px 1fr; gap: 46px; align-items: center; padding: 50px 0; border-bottom: 1px solid var(--line); }
+  .lider { display: grid; grid-template-columns: 300px 1fr; gap: 46px; align-items: center; padding: 50px 0; border-bottom: 1px solid var(--line); max-width: 880px; margin-left: auto; margin-right: auto; }
   .lider:last-child { border-bottom: none; }
   .lider:nth-child(even) { grid-template-columns: 1fr 300px; }
   .lider:nth-child(even) .lider-photo { order: 2; }

@@ -139,3 +139,58 @@ document.querySelectorAll('.faq-item').forEach(item => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(); }
   });
 });
+
+// formulário de inscrição (só existe na index.html) — envia pra API do Projeto Reviva
+const inscricaoForm = document.getElementById('inscricaoForm');
+if (inscricaoForm) {
+  // TODO: troque pela URL da sua API depois do deploy (ex: Render).
+  // Em desenvolvimento local, aponta pra http://localhost:3333.
+  const API_BASE_URL = 'https://reviva-backend.vercel.app';
+
+  const submitBtn = document.getElementById('inscricaoSubmit');
+  const msgEl = document.getElementById('inscricaoMsg');
+
+  inscricaoForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!inscricaoForm.checkValidity()) {
+      inscricaoForm.reportValidity();
+      return;
+    }
+
+    const originalLabel = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    msgEl.textContent = '';
+    msgEl.className = 'inscricao-msg';
+
+    const data = new FormData(inscricaoForm);
+    const payload = {
+      nome_crianca: data.get('nome_crianca').trim(),
+      idade: Number(data.get('idade')),
+      nome_responsavel: data.get('nome_responsavel').trim(),
+      telefone_whatsapp: data.get('telefone_whatsapp').trim(),
+    };
+
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/inscricoes`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.erro || `Falha ao enviar (${res.status})`);
+
+      inscricaoForm.reset();
+      msgEl.textContent = 'Inscrição recebida! A gente entra em contato pelo WhatsApp em breve.';
+      msgEl.classList.add('success');
+    } catch (err) {
+      msgEl.textContent = err.message || 'Não deu pra enviar agora. Tenta de novo em instantes ou manda mensagem no Instagram.';
+      msgEl.classList.add('error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
+    }
+  });
+}
