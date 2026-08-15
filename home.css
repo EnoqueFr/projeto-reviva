@@ -1,4 +1,4 @@
-  .hero { position: relative; padding: 148px 0 0; overflow: hidden; background: var(--ink); color: var(--paper); }
+  .hero { position: relative; padding: 148px 0 0; overflow: hidden; background: var(--ink-forest); color: var(--paper); }
   @media (max-width: 640px) { .hero { padding-top: 122px; } }
   .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 50px; align-items: center; position: relative; padding-bottom: 60px; }
   .hero-kicker { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
@@ -11,6 +11,8 @@
   .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 42px; }
   .hero-stats { display: flex; gap: 34px; flex-wrap: wrap; }
   .stat-num { font-family: var(--display); font-size: 28px; color: var(--paper); line-height: 1; }
+  .hero-stats > div:nth-child(1) .stat-num { color: var(--orange); }
+  .hero-stats > div:nth-child(2) .stat-num { color: var(--green); }
   .stat-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: #8C8C82; margin-top: 8px; }
   .hero-visual { position: relative; }
   .hero-photo { border-radius: 10px; overflow: hidden; position: relative; aspect-ratio: 4/5; }
@@ -68,6 +70,8 @@
   @media (max-width: 640px) { .carousel-slide { width: 72vw; } .carousel-hint { display: none; } .carousel-nav { justify-content: flex-end; } }
 
   .equipe { background: var(--paper-warm); }
+  .equipe .eyebrow { color: var(--green-deep); }
+  .equipe .eyebrow::before { background: var(--green); }
   .equipe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .membro-card { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
   .membro-photo { aspect-ratio: 4/5; overflow: hidden; }
@@ -94,6 +98,8 @@
   @media (max-width: 480px) { .acao-grid { grid-template-columns: 1fr; } }
 
   .colaboradores { background: var(--paper-warm); padding-top: 64px; padding-bottom: 64px; }
+  .colaboradores .eyebrow { color: var(--green-deep); }
+  .colaboradores .eyebrow::before { background: var(--green); }
   .colab-sub { font-size: 15px; color: #565750; max-width: 520px; margin-top: -20px; margin-bottom: 32px; }
   .colab-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
   .colab-item {
@@ -155,7 +161,7 @@
   .inscricao-msg.success { color: var(--green-deep); }
   .inscricao-msg.error { color: #C43A0A; }
 
-  .cta-final { background: var(--ink); color: var(--paper); text-align: center; padding: 96px 0; }
+  .cta-final { background: var(--ink-forest); color: var(--paper); text-align: center; padding: 96px 0; }
   @media (max-width: 640px) { .cta-final { padding: 64px 0; } }
   .cta-final h2 { font-size: clamp(32px, 5vw, 54px); margin: 16px auto 18px; max-width: 720px; color: var(--paper); }
   .cta-final p.sub { font-size: 16px; max-width: 460px; margin: 0 auto 34px; color: #B5B5AA; }
