@@ -70,8 +70,3 @@ Histórico condensado das cinco primeiras versões — do protótipo com ilustra
 - **v3** — Nova seção "Ação Social"; paleta de cores extraída do logo oficial (laranja/verde); tipografia definitiva (Archivo Black + Inter + JetBrains Mono); textos revisados por tom e empatia.
 - **v4** — SEO e conversão: Open Graph/Twitter Card, botão flutuante mobile, seção FAQ; CSS e JS extraídos para arquivos compartilhados; correção do endereço e do menu mobile em `equipe.html`.
 - **v5** — Acessibilidade (focus trap no menu, FAQ navegável por teclado, `aria-live` no carrossel); performance (`preload` da imagem do Hero); nova seção de Colaboradores; reordenação das seções para uma sequência mais lógica; redução de efeitos visuais "de IA" (menos glow, menos ícone decorativo).
-
-
-### Pendente nesta versão
-- ...
-```
