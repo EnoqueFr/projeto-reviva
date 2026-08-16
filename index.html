@@ -245,6 +245,36 @@
     </div>
   </section>
 
+  <section class="inscricao" id="inscricao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inscrição</span>
+        <h2 class="section-title">Quer matricular seu filho<br>ou filha?</h2>
+        <p class="inscricao-sub">Prefere falar direto? Manda um "oi" pra gente no <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="link-inline">Instagram</a>. Se preferir, é só preencher o formulário abaixo — a gente entra em contato pelo WhatsApp.</p>
+      </div>
+      <form id="inscricaoForm" class="inscricao-form reveal" novalidate>
+        <div class="form-row">
+          <label for="nomeCrianca">Nome da criança ou adolescente</label>
+          <input type="text" id="nomeCrianca" name="nome_crianca" required maxlength="100" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="idade">Idade</label>
+          <input type="number" id="idade" name="idade" min="5" max="17" required>
+        </div>
+        <div class="form-row">
+          <label for="nomeResponsavel">Nome do responsável</label>
+          <input type="text" id="nomeResponsavel" name="nome_responsavel" required maxlength="100" autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label for="telefone">WhatsApp do responsável</label>
+          <input type="tel" id="telefone" name="telefone_whatsapp" required placeholder="(85) 9xxxx-xxxx" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary" id="inscricaoSubmit">Quero inscrever</button>
+        <p id="inscricaoMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
   <section class="colaboradores">
     <div class="wrap">
       <div class="section-head reveal mb-36">
@@ -349,36 +379,6 @@
           title="Mapa interativo — Localização do Projeto Reviva na Rua Vinte Seis, Prefeito José Walter, Fortaleza - CE, 60810-670. Arraste para navegar ou clique para abrir no Google Maps.">
         </iframe>
       </div>
-    </div>
-  </section>
-
-  <section class="inscricao" id="inscricao">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Inscrição</span>
-        <h2 class="section-title">Quer matricular seu filho<br>ou filha?</h2>
-        <p class="inscricao-sub">Prefere falar direto? Manda um "oi" pra gente no <a href="https://www.instagram.com/projetorevivaoficial" target="_blank" rel="noopener" class="link-inline">Instagram</a>. Se preferir, é só preencher o formulário abaixo — a gente entra em contato pelo WhatsApp.</p>
-      </div>
-      <form id="inscricaoForm" class="inscricao-form reveal" novalidate>
-        <div class="form-row">
-          <label for="nomeCrianca">Nome da criança ou adolescente</label>
-          <input type="text" id="nomeCrianca" name="nome_crianca" required maxlength="100" autocomplete="off">
-        </div>
-        <div class="form-row">
-          <label for="idade">Idade</label>
-          <input type="number" id="idade" name="idade" min="5" max="17" required>
-        </div>
-        <div class="form-row">
-          <label for="nomeResponsavel">Nome do responsável</label>
-          <input type="text" id="nomeResponsavel" name="nome_responsavel" required maxlength="100" autocomplete="off">
-        </div>
-        <div class="form-row">
-          <label for="telefone">WhatsApp do responsável</label>
-          <input type="tel" id="telefone" name="telefone_whatsapp" required placeholder="(85) 9xxxx-xxxx" autocomplete="off">
-        </div>
-        <button type="submit" class="btn btn-primary" id="inscricaoSubmit">Quero inscrever</button>
-        <p id="inscricaoMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
-      </form>
     </div>
   </section>
 
