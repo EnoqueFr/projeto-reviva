@@ -12,8 +12,28 @@
 .painel-main { padding: 56px 32px; max-width: 960px; }
 @media (max-width: 640px) { .painel-main { padding: 40px 20px; } }
 
-.painel-login { max-width: 380px; margin: 40px auto; }
 .painel-sub { color: #565750; font-size: 15px; margin-top: 8px; margin-bottom: 8px; }
+.painel-login {
+  display: flex; justify-content: center; align-items: center;
+  min-height: calc(100vh - 65px); padding: 40px 20px;
+}
+.painel-login-card {
+  width: 100%; max-width: 400px; background: var(--paper);
+  border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+  box-shadow: 0 8px 30px rgba(21,22,15,0.06);
+}
+.painel-login-belt {
+  height: 5px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--orange) 45%, var(--green) 100%);
+}
+.painel-login-body { padding: 40px 36px 36px; text-align: center; }
+.painel-login-logo { width: 44px; height: 44px; border-radius: 50%; margin: 0 auto 18px; }
+.painel-login-title {
+  font-family: var(--display); font-size: 28px; line-height: 1.1; text-transform: uppercase;
+  color: var(--ink); margin: 14px 0 10px;
+}
+.painel-login .painel-sub { text-align: center; margin-bottom: 4px; }
+.painel-login .painel-form { text-align: left; margin-top: 24px; }
 
 .painel-form { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
 .painel-form .btn { align-self: stretch; justify-content: center; }

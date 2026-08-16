@@ -4,6 +4,23 @@ Histórico de versões da landing page. Formato livre, em português, pensado pa
 
 ---
 
+## [v8] — em andamento
+
+### Adicionado
+- **Seção de privacidade/LGPD no README** — documentação de quais dados são coletados pelo formulário de inscrição, base legal, retenção e direitos do titular (sem expor nenhum dado real).
+
+### Alterado
+- **URLs limpas**: `vercel.json` do site com `cleanUrls: true` — `/equipe.html` agora é `/equipe`, sem `.html`/`index` aparecendo na barra de endereço. Todos os links internos (`index.html`, `equipe.html`) atualizados para as versões limpas (`/`, `/equipe`).
+- **Fundo do Hero e do CTA final**: trocado de grafite/preto (`--ink`) para um escuro puxado pro verde (`--ink-forest`), reforçando a identidade de cor do projeto.
+- **Mais detalhes em verde**: números de destaque do Hero e "eyebrows" das seções Equipe, Colaboradores e Valores alternando entre laranja e verde (antes só laranja).
+- **Título "Painel de colaboradores" redesenhado**: card centralizado com a faixa de cor característica do site no topo, logo em destaque — antes era só um formulário solto na página.
+- **Títulos de seção e alguns botões em maiúsculo**, para reforçar a linguagem visual do site (que já usa fonte mono + maiúsculo nos "eyebrows").
+
+### Corrigido
+- **Travamento/engasgo ao rolar a página**: o header usava `backdrop-filter: blur()`, recalculado a cada pixel rolado — trocado por um fundo sólido semi-opaco (bem mais leve pra GPU, principalmente no celular). A barra de progresso no topo também recalculava o layout da página em todo evento de scroll, sem economia nenhuma — agora represada com `requestAnimationFrame`.
+
+---
+
 ## [v7] — em andamento
 
 ### Adicionado

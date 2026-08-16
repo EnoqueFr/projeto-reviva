@@ -94,13 +94,23 @@ Extraída diretamente do logo oficial do projeto:
 
 ## Próximos passos (planejados, não implementados)
 
-- [ ] Deploy da API (`reviva-backend`) em produção — código pronto, falta hospedar (ex: Render) e configurar as variáveis de ambiente
-- [ ] Trocar `API_BASE_URL` (placeholder) em `app.js` e `painel.js` pela URL real da API depois do deploy
-- [ ] Criar o primeiro login de colaborador em produção (`npm run seed:colaborador` no backend)
+- [ ] Legendas definitivas dos 4 cards de Ação Social — usando por ora "Saúde", "Aromoterapia", "Jurídico" e "Alimentação"
+- [ ] Página de política de privacidade dedicada (hoje a informação de LGPD vive só neste README — ideal ter uma página `/privacidade` linkada no formulário e no footer)
+
+## Privacidade e LGPD
+
+O formulário de inscrição (`#inscricao`) coleta dados pessoais de menores de idade e de seus responsáveis, então o projeto segue os princípios da LGPD (Lei 13.709/2018) no que for aplicável a uma iniciativa social de pequeno porte:
+
+- **Dados coletados**: nome da criança/adolescente, idade, nome do responsável e telefone (WhatsApp) — o mínimo necessário para viabilizar a matrícula e o contato. Nenhum dado sensível (saúde, documento, endereço) é pedido no formulário.
+- **Base legal**: consentimento do responsável legal, dado ao preencher e enviar o formulário voluntariamente (Art. 7º, I e Art. 14 da LGPD, que trata do tratamento de dados de crianças e adolescentes mediante consentimento de ao menos um dos pais/responsável).
+- **Finalidade**: exclusivamente viabilizar o contato para matrícula no Projeto Reviva — os dados não são usados para nenhum outro fim, nem compartilhados com terceiros ou usados para publicidade.
+- **Armazenamento e segurança**: os dados ficam num banco PostgreSQL, acessível só pela API própria (`reviva-backend`) e só por colaboradores autenticados (login com senha com hash bcrypt + sessão JWT). Nada de dado pessoal fica no código-fonte ou nos repositórios — nem deste, nem do backend.
+- **Retenção**: sem prazo automático de exclusão implementado ainda (ver "Próximos passos" do backend) — hoje a exclusão de um registro é manual, feita por um colaborador direto no banco, mediante pedido do titular/responsável.
+- **Direitos do titular**: qualquer responsável pode pedir acesso, correção ou exclusão dos dados da criança entrando em contato pelo Instagram oficial do projeto.
 
 ## Deploy
 
-Site estático — está sendo hospedado gratuitamente no Vercel sem nenhuma configuração especial. 
+Site estático — está sendo hospedado gratuitamente no Vercel sem nenhuma configuração especial.
 ---
 
 *Projeto social sem fins lucrativos. Este repositório contém apenas o código da landing page — não armazena dados pessoais de alunos ou responsáveis.*

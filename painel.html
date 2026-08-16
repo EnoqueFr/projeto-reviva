@@ -17,7 +17,7 @@
 
 <header class="painel-header">
   <div class="wrap painel-header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <img src="img/logo-reviva-small.png" alt="Logo Projeto Reviva">
       <span class="logo-text">Reviva</span>
     </a>
@@ -31,20 +31,27 @@
 <main class="wrap painel-main">
 
   <section id="loginSection" class="painel-login">
-    <h1 class="section-title">Painel de colaboradores</h1>
-    <p class="painel-sub">Acesso restrito à equipe do Projeto Reviva.</p>
-    <form id="loginForm" class="painel-form" novalidate>
-      <div class="form-row">
-        <label for="loginEmail">E-mail</label>
-        <input type="email" id="loginEmail" name="email" required autocomplete="username">
+    <div class="painel-login-card">
+      <div class="painel-login-belt"></div>
+      <div class="painel-login-body">
+        <img src="img/logo-reviva-small.png" alt="" class="painel-login-logo">
+        <span class="eyebrow">Área restrita</span>
+        <h1 class="painel-login-title">Painel de<br>colaboradores</h1>
+        <p class="painel-sub">Acesso restrito à equipe do Projeto Reviva.</p>
+        <form id="loginForm" class="painel-form" novalidate>
+          <div class="form-row">
+            <label for="loginEmail">E-mail</label>
+            <input type="email" id="loginEmail" name="email" required autocomplete="username">
+          </div>
+          <div class="form-row">
+            <label for="loginSenha">Senha</label>
+            <input type="password" id="loginSenha" name="senha" required autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn btn-primary" id="loginSubmit">Entrar</button>
+          <p id="loginMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
+        </form>
       </div>
-      <div class="form-row">
-        <label for="loginSenha">Senha</label>
-        <input type="password" id="loginSenha" name="senha" required autocomplete="current-password">
-      </div>
-      <button type="submit" class="btn btn-primary" id="loginSubmit">Entrar</button>
-      <p id="loginMsg" class="inscricao-msg" role="status" aria-live="polite"></p>
-    </form>
+    </div>
   </section>
 
   <section id="dashboardSection" class="painel-dashboard hidden">
