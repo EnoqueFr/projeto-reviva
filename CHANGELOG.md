@@ -33,10 +33,6 @@ Histórico de versões da landing page. Formato livre, em português, pensado pa
 - **CTAs do site trocados de "Vem falar com a gente" para "Quero inscrever meu filho"**, agora apontando pro formulário (`#inscricao`) em vez do Instagram — no hero, header, menu mobile, botão flutuante e CTA final de `index.html` e `equipe.html`. O Instagram continua disponível como opção secundária (CTA final e seção de inscrição).
 - Linha "Como se inscrever" da seção Local passou a citar as duas opções (Instagram e formulário).
 
-### Pendente
-- Deploy da API em produção (código pronto, falta hospedar — ver README do `reviva-backend`) e configurar `API_BASE_URL` em `app.js`/`painel.js`.
-- Criar o primeiro login de colaborador em produção.
-
 ---
 
 ## [v6] — em andamento
@@ -49,15 +45,10 @@ Histórico de versões da landing page. Formato livre, em português, pensado pa
 - **Grade de colaboradores desalinhada com número ímpar de itens**: `.colab-grid` trocada de CSS Grid (`auto-fit`) para Flexbox com `justify-content: center`, centralizando automaticamente o último item de uma linha incompleta — sem depender de contar quantos itens existem.
 
 ### Adicionado
-- **Foto individual do Josué Silva** (sem outra pessoa no quadro), substituindo a foto genérica dele ensinando uma aluna no card resumido (`index.html`) e no card grande (`equipe.html`).
 - **Seção Ação Social ampliada de 3 para 4 cards**: Saúde, Aromoterapia, Jurídico e Alimentação — refletindo a variedade real de frentes que já rolam nos dias de ação social.
 
 ### Alterado
 - Pequenos acentos de cor verde adicionados ao lado do laranja já existente (3º número da faixa "Sobre o projeto" e número do 3º pilar), para dar mais equilíbrio entre as duas cores da paleta.
-
-### Pendente
-- Formulário de inscrição inline (opção extra, ao lado do CTA do Instagram) e banco de dados via Supabase — aguardando criação do projeto Supabase pelo usuário.
-- Legendas definitivas dos 4 cards de Ação Social — usando por ora "Saúde", "Aromoterapia", "Jurídico" e "Alimentação"; podem ser ajustadas.
 
 ---
 
@@ -70,28 +61,3 @@ Histórico condensado das cinco primeiras versões — do protótipo com ilustra
 - **v3** — Nova seção "Ação Social"; paleta de cores extraída do logo oficial (laranja/verde); tipografia definitiva (Archivo Black + Inter + JetBrains Mono); textos revisados por tom e empatia.
 - **v4** — SEO e conversão: Open Graph/Twitter Card, botão flutuante mobile, seção FAQ; CSS e JS extraídos para arquivos compartilhados; correção do endereço e do menu mobile em `equipe.html`.
 - **v5** — Acessibilidade (focus trap no menu, FAQ navegável por teclado, `aria-live` no carrossel); performance (`preload` da imagem do Hero); nova seção de Colaboradores; reordenação das seções para uma sequência mais lógica; redução de efeitos visuais "de IA" (menos glow, menos ícone decorativo).
-
----
-
-## Como registrar uma atualização futura
-
-Ao aplicar mudanças, adicionar uma nova seção no topo deste arquivo seguindo o modelo:
-
-```md
-## [vX] — AAAA-MM-DD (ou "em andamento")
-
-### Adicionado
-- ...
-
-### Alterado
-- ...
-
-### Corrigido
-- ...
-
-### Removido
-- ...
-
-### Pendente nesta versão
-- ...
-```
